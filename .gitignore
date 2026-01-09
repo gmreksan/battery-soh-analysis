@@ -51,6 +51,7 @@ coverage.xml
 # Jupyter Notebook
 .ipynb_checkpoints/
 *.ipynb_checkpoints/
+*.nbconvert.*
 
 # IDE
 .vscode/
@@ -71,15 +72,41 @@ venv.bak/
 # Dataset Files (Do not commit raw data)
 data/raw/
 *.hdf5
+*.h5
 *.zip
 *.tar.gz
+*.gz
 
-# Generated Files (Can be regenerated)
-figures/
-models/*.pkl
-models/*.joblib
-results/
+# Machine Learning Models & Results
+models/              # Trained models
+checkpoints/         # Training checkpoints
+*.pkl
+*.pickle
+*.joblib
+*.keras
+*.pth
+*.pt
+*.onnx
+figures/             # Generated plots
+plots/
+results/             # Analysis results
+outputs/
+predictions/
+
+# Logs
 *.log
+logs/
+mlruns/              # MLflow
+wandb/               # Weights & Biases
+
+# Visualization files
+*.png
+*.jpg
+*.jpeg
+*.pdf
+*.svg
+*.eps
+*.gif
 
 # OS files
 .DS_Store
