@@ -78,7 +78,6 @@ data/raw/
 *.gz
 
 # Machine Learning Models & Results
-models/              # Trained models
 checkpoints/         # Training checkpoints
 *.pkl
 *.pickle
