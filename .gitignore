@@ -70,7 +70,7 @@ env.bak/
 venv.bak/
 
 # Dataset Files (Do not commit raw data)
-data/raw/
+data/
 *.hdf5
 *.h5
 *.zip
@@ -89,6 +89,11 @@ checkpoints/         # Training checkpoints
 plots/
 outputs/
 predictions/
+figures/*.png
+models/*.pkl
+models/*.joblib
+results/
+*.log
 
 # Logs
 *.log
